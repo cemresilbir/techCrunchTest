@@ -64,7 +64,6 @@ public class techCrunchTest {
             String pageTitle = driver.getTitle();
             Assert.assertEquals(newsTitle, pageTitle);
 
-
             //Verify the links within the news content
             WebElement articleContent = driver.findElement(By.className("article__content"));
             java.util.List<WebElement> links = articleContent.findElements(By.tagName("a"));
